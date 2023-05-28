@@ -1,22 +1,29 @@
-const express=require("express");
+const  Express  = require("express");
+const { connection } = require("./database/db");
+const {todoRoute}=require("./Routes/TotoRoute")
+const cors = require("cors")
 
-const mongoose=require("mongoose");
+const app = Express();
 
-require("dotenv").config();
+const PORT = 8000
 
-const cors=require("cors")
+app.use(Express.json())
 
-const app=express()
-const PORT=process.env.PORT | 8080
-
-app.use(express.json);
 app.use(cors())
 
-app.get("/",(req,res) => {
-    res.send("Hello")
-})
+app.use("/api",todoRoute)
 
+app.listen(PORT, async() => {
+    try{
+        await connection;
+        console.log("connected To DB successfully")
+        console.log(`Listen Port On ${PORT}`)
+    }
+    catch(err){
+        console.log("Error connect to DB")
+        console.log(err)
 
-app.listen(PORT,()=>{
-    console.log("")
+    }
+    
+    
 })
