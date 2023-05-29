@@ -1,0 +1,62 @@
+.conatiner{
+    border: 1px solid #f4f1f1;
+    width: 36%;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+}
+input[type="text"] {
+    
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.form-control{
+    margin-top: 20px;
+}
+.btn{
+    margin-left: 20px;
+    border-radius: 4px;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+
+.conatiner1 > div{
+    border: 1px solid #8f8989;
+    height: 100px; 
+    margin-top: 10px;
+    text-align: start;
+    display: flex;
+    gap: 120px;
+    border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+h2{
+    margin-right: 25%;
+}
+.todo_add > div{
+    margin-bottom: 10px;
+}
+.containet_todo{
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+    text-align: start;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+.icons{
+    justify-content: space-between;
+}

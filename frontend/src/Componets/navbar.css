@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    gap: 20px;
+    border: 1px solid black;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    justify-content: space-around;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: rgb(99, 99, 234);
+    color: white;
+}
+.containe > div{
+   
+    border: 1px solid black;
+}

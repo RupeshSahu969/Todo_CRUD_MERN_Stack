@@ -2,12 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import MainRoute from './Pages/MainRoute';
 import TodoForm from './Pages/TodoForm';
+import SignUp from './Pages/SignUp';
+import Navbar from './Componets/Navbar';
 
 function App() {
   return (
     <div className="App">
-     {/* <MainRoute/> */}
-     <TodoForm/>
+      <Navbar/>
+     <MainRoute/>
+     {/* <TodoForm/> */}
+     {/* <SignUp/> */}
     </div>
   );
 }
