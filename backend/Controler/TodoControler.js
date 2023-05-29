@@ -1,8 +1,8 @@
 const {todoModel}=require("../Models/TodoModel")
 
 const getData=async(req,res) => {
-    const task=await todoModel.find()
-    res.send(task)
+    const user=await todoModel.find()
+    res.send(user)
     
 }
 

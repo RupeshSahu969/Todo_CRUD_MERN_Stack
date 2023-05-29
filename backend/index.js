@@ -1,7 +1,8 @@
 const  Express  = require("express");
 const { connection } = require("./database/db");
 const {todoRoute}=require("./Routes/TotoRoute")
-const cors = require("cors")
+const cors = require("cors");
+const { userRoute } = require("./Routes/UserRoute");
 
 const app = Express();
 
@@ -11,7 +12,8 @@ app.use(Express.json())
 
 app.use(cors())
 
-app.use("/api",todoRoute)
+app.use("/",todoRoute)
+app.use("/",userRoute)
 
 app.listen(PORT, async() => {
     try{

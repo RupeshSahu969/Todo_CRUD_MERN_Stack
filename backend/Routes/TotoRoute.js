@@ -3,10 +3,10 @@ const {getData, addData, updateData, deleteData}=require("../Controler/TodoContr
 
 const todoRoute=Router();
 
-todoRoute.get("/get",getData)
-todoRoute.post("/add",addData)
-todoRoute.put("/update/:id",updateData)
-todoRoute.delete("/delete/:id",deleteData)
+todoRoute.get("/todos",getData)
+todoRoute.post("/todos",addData)
+todoRoute.put("/todos/:id",updateData)
+todoRoute.delete("/todos/:id",deleteData)
 
 module.exports={
     todoRoute
