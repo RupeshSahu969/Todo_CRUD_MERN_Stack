@@ -6,6 +6,7 @@ const Login = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [user,setUser]=useState({})
     
     const navigate=useNavigate()
 
@@ -15,6 +16,7 @@ const Login = () => {
             email,
             password
         }
+        
         axios.post("http://localhost:8000/login", payload)
             .then((res) => {
                 alert("Login Successfully")
