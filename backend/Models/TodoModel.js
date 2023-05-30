@@ -10,7 +10,11 @@ const todoSchema=new mongoose.Schema({
 		default: 'Chaoo',
 		trim: true
 	},
-	Added: { type: Date, default: (new Date()).getTime() },
+	Added: { 
+        type: Date,
+          default:  Date.now()
+     },
+     datecreated: Date
 	
 })
 

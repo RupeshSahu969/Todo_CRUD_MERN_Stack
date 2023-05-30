@@ -23,10 +23,10 @@ userRoute.post("/login",async(req,res) => {
         if(password === result.password && email === result.email) {
             res.send({message:"login sucess",user:result})
         }else{
-            res.send({message:"wrong credentials"})
+            res.send({message:"wrong password"})
         }
      }else{
-         res.send("not register")
+         res.send("user not Found")
      }
 
 
