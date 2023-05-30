@@ -18,7 +18,7 @@ const TodoForm = () => {
     const payload = {
       name
     }
-    axios.post("http://localhost:8000/todos", payload)
+    axios.post("https://newtodo-r1f8.onrender.com/todos", payload)
       .then((res) => {
         setName("")
         setUpdateUi((prevState) => !prevState);
@@ -28,7 +28,7 @@ const TodoForm = () => {
   }
 
   useEffect(() => {
-    axios.get("http://localhost:8000/todos")
+    axios.get("https://newtodo-r1f8.onrender.com/todos")
       .then((res) => {
         setTodo(res.data)
       })
@@ -45,7 +45,7 @@ const TodoForm = () => {
     const payload = {
       name
     }
-    axios.put(`http://localhost:8000/todos/${updateId}`, payload).then((res) => {
+    axios.put(`https://newtodo-r1f8.onrender.com/todos/${updateId}`, payload).then((res) => {
       console.log(res.data);
       setUpdateUi((prevState) => !prevState);
       setUpdateId(null);

@@ -16,7 +16,7 @@ const SignUp = () => {
             email,
             password
         }
-        axios.post("http://localhost:8000/signup", payload)
+        axios.post("https://newtodo-r1f8.onrender.com/signup", payload)
             .then((res) => {
                 alert("Signup Successfully")
                 navigate("/login")

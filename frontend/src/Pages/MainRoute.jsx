@@ -11,8 +11,6 @@ const MainRoute = () => {
     <div>
         <Routes>
             <Route path='/todo' element={<TodoForm/>} />
-            {/* <Route path='/todoitem' element={<TodoItem/>} />
-            <Route path='/todolist' element={<TodoList/>} /> */}
             <Route path='/login' element={<Login/>} /> 
             <Route path='/' element={<SignUp/>} /> 
             <Route path='/logout' element={<Logout/>} /> 

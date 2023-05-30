@@ -6,9 +6,8 @@ import { AiFillCheckCircle } from "react-icons/ai"
 import "./todo.css"
 const TodoList = ({ id, name, Author, Added, setUpdateUi, handleEdit }) => {
 
-
   const TodoDelete = () => {
-    axios.delete(`http://localhost:8000/todos/${id}`)
+    axios.delete(`https://newtodo-r1f8.onrender.com/todos/${id}`)
       .then((res) => {
         console.log(res)
         setUpdateUi((prevState) => !prevState);
