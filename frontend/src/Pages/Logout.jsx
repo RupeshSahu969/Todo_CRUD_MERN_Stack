@@ -7,7 +7,7 @@ const navigate=useNavigate()
 
     const hendlesubmit=()=>{
         localStorage.setItem("token","")
-      navigate("/")
+      navigate("/signup")
     }
 
   return (

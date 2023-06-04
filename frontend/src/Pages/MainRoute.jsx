@@ -10,9 +10,9 @@ const MainRoute = () => {
   return (
     <div>
         <Routes>
-            <Route path='/todo' element={<TodoForm/>} />
+            <Route path='/' element={<TodoForm/>} />
             <Route path='/login' element={<Login/>} /> 
-            <Route path='/' element={<SignUp/>} /> 
+            <Route path='/signup' element={<SignUp/>} /> 
             <Route path='/logout' element={<Logout/>} /> 
         </Routes>
     </div>

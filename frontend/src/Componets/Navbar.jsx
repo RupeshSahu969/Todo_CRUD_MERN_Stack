@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className='container'>
-        <div style={{marginTop:"7px",fontSize:"30px"}}>toDoApp;</div>
+        <div style={{marginTop:"7px",fontSize:"30px", color:"white"}}>toDoApp;</div>
         <div style={{marginTop:"10px"}}>
         Logged in as  Chaoo
         </div>
