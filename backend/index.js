@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://rupeshsahu969:rupesh@cluster0.fppxd44.mongodb.net/letestCRUD?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const orderSchema = new mongoose.Schema({
   name: String,
